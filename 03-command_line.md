@@ -19,7 +19,20 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> >  
+| command | what they do|
+| -------- | ------------|
+| pwd | show current working directory path|
+|mkdir | creating a directory|
+|rm -r <dir> | Remove a directory and contents|
+|touch <file> | creating a file using `touch` command|
+|rm <file> | deleting a file|
+|mv <file name> <new file name>| renaming a file|
+| ls -a | listing hidden files|
+|cp <file path> <new file path> |copying a file from one directory to another|
+|clear | clear screen|
+|man [command]| show help for command|
+
 
 ---
 
@@ -34,7 +47,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > |ls | Short listing|
+|ls -a| Listing incl. hidden files|
+|ls -l| Long listing|
+|ls -lh|  Long listing with Human readable file sizes|
+|ls -lah| Long listing with Human readable file sizes and hidden files|
+|ls -t| Listing by time/date|
+|ls -Glp| Long listing which doesn't show Group and has slash after each directory | 
+
 
 ---
 
@@ -42,7 +62,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > |-r | Displays files in reverse order.|
+|-R | Displays subdirectories as well.|
+|-t | Displays newest files first. (based on timestamp)|
+|-u|  Displays files by the file access time.|
+|-x|  Displays files as rows across the screen.|
 
 ---
 
@@ -50,7 +74,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs reads data from standard input (stdin) and executes the command (supplied to it as argument) one or more times based on the input read. Any blanks and spaces in input are treated as delimiters, while blank lines are ignored. An example would be 
+```
+$ find -name "*.txt" | xargs grep "abc"
+```
+>> where a txt file containing string "abc" is searched for
 
  
 
