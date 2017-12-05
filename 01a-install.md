@@ -64,6 +64,7 @@ How can you check the version of Python installed if you happen to be on an unfa
  $ python -V
  $ python2 -V
  $ python3 -V
+```
 >> to see which versions are available.
  
 
