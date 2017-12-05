@@ -48,6 +48,8 @@ What do the following commands do:
 `ls -Glp`  
 
 > > 
+| command | what they do|
+| -------- | ------------|
 |ls | Short listing|
 |ls -a| Listing incl. hidden files|
 |ls -l| Long listing|
@@ -64,6 +66,8 @@ What do the following commands do:
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > > 
+| command | what they do|
+| -------- | ------------|
 |-r | Displays files in reverse order.|
 |-R | Displays subdirectories as well.|
 |-t | Displays newest files first. (based on timestamp)|
