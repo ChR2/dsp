@@ -47,7 +47,8 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > |ls | Short listing|
+> > 
+|ls | Short listing|
 |ls -a| Listing incl. hidden files|
 |ls -l| Long listing|
 |ls -lh|  Long listing with Human readable file sizes|
@@ -62,7 +63,8 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > |-r | Displays files in reverse order.|
+> > 
+|-r | Displays files in reverse order.|
 |-R | Displays subdirectories as well.|
 |-t | Displays newest files first. (based on timestamp)|
 |-u|  Displays files by the file access time.|
