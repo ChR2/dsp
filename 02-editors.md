@@ -35,7 +35,7 @@ Here's a basic list of commands:
 |---|----------------|----------------|--------------|--------------------|----------------|
 | 1 | nano           | nano filen.py  | [just type]  | ctrl + o, enter    | ctrl + x       |
 | 2 | vim, vi        | vim filen.py   | [just type]  | esc :w, enter      | esc :q, enter  |
-| 3 | emacs          | emacs filen.py | [just type]  | ctrl-x, xtrl-s     | ctrl-x, ctrl-c |
+| 3 | emacs          | emacs filen.py | [just type]  | ctrl-x, ctrl-s     | ctrl-x, ctrl-c |
  
 
 ---
@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Vim. Its a standard in the industry.
 
 --
 
@@ -89,6 +89,15 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
+>>  Sublime.  I've been using it for years. Its pretty user friendly. You can split your screens, skip and select through code easily. You can also customize your editor easily and pick a themes as well. You can install commands to open files through command line or install  package controls in sublime directly. Some keyboard shortcuts are 
+|---------|------------------------------------------|
+|Ctrl + L| Select line - Repeat to select next lines|
+|Ctrl + D|  Select word - Repeat select others occurrences|
+|Ctrl + M|  Jump to closing parentheses Repeat to jump to opening parentheses|
+|Ctrl + ⇧ + M|  Select all contents of the current parentheses|
+|Ctrl + ⇧ + K|  Delete Line|
+|Ctrl + KK| Delete from cursor to end of line|
+|Ctrl + K + ⌫|  Delete from cursor to start of line|
+|Ctrl + ]|  Indent current line(s)
+|Ctrl + [|  Un-indent current line(s)|
+|Ctrl + ⇧ + D|  Duplicate line(s)|
