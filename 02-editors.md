@@ -99,6 +99,6 @@ What graphical editor will you use? How did you make your decision? What are som
 |Ctrl + ⇧ + K|  Delete Line|
 |Ctrl + KK| Delete from cursor to end of line|
 |Ctrl + K + ⌫|  Delete from cursor to start of line|
-|Ctrl + ]|  Indent current line(s)
+|Ctrl + ]|  Indent current line(s)|
 |Ctrl + [|  Un-indent current line(s)|
 |Ctrl + ⇧ + D|  Duplicate line(s)|
