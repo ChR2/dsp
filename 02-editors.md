@@ -90,6 +90,7 @@ What terminal editor will be your preferred choice of use? How did you make your
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >>  Sublime.  I've been using it for years. Its pretty user friendly. You can split your screens, skip and select through code easily. You can also customize your editor easily and pick a themes as well. You can install commands to open files through command line or install  package controls in sublime directly. Some keyboard shortcuts are 
+
 |shortcut| Purpose|
 |---------|------------------------------------------|
 |Ctrl + L| Select line - Repeat to select next lines|
