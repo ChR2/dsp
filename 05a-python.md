@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are the same in that they are containers. They can hold a sequence of objects and support elements of any type and maintain order. Lists can be identified in syntax via the [] while tuples use (). Inside both container, commas are used to separate the elements from one another. Tuples are immutable and thus their elements cannot be altered. For these reasons methods such as .append() don't exist in tuples. They also are more memory efficient since its length is set. Lists are mutable and can be changed and thus have many methods that can alter its contents available to it. Because its length can change at any given time, memory allocation is generous to accomodate for methods such as append(). Since only immutable objects can be keys in a dictionary, tuples are best suited for this job. In order for a list to be used as keys in a dictionary, these need to be first converted to tuples. 
 
 ---
 
