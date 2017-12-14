@@ -45,7 +45,44 @@ student_tuples = [
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions is a construct derived from mathematical notations that outputs a list. It has an expression followed by a for clause, then
+possibly more for or even if clauses within brackets typical of a list construct. The expressions can be anything, meaning you can
+put in all kinds of objects in lists.
+```
+new_list = [expression(i) for i in old_list if filter(i)]
+```
+>>map and filter can be used alongside with lambda to make a construct with similar output as that to list comprehensions. Map and filter by themselves seem to call for an extra function everytime it goes through the item in the iterable which makes its performance slightly slower to that of a list comprehension. A lambda is restricted to a simple expression while a list comprehesion can have more than one for and even if clauses.
+
+```
+map(func, iterable)
+
+a = [1,2,3,4]
+b = [17,12,11,10]
+r = list(map(lambda x,y:x+y, a,b))
+[18, 14, 14, 14]
+
+using list comprehension
+
+r = [x + b[y] for y,x in enumerate(a)]
+[18, 14, 14, 14]
+
+```
+```
+filter(func, iterable)
+
+c = [0,1,1,2,3,5,8,13,21,34,55]
+r = list(filter(lambda x: x % 2==0, c))
+[0, 2, 8, 34]
+
+using list comprehension
+
+r = [x for x in c if x%2 == 0]
+[0, 2, 8, 34]
+```
+
+
+
+
 
 ---
 
