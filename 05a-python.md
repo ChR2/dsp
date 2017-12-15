@@ -79,8 +79,20 @@ using list comprehension
 r = [x for x in c if x%2 == 0]
 [0, 2, 8, 34]
 ```
->> Set comprehension and dictionary comprehensions 
+>> Dictionary comprehensions follow the same format as list comprehensions but have a dictionary as an output instead. The syntax enveloping the construct is {}.
 
+```
+dictionary comprehension 
+r = { x: x**2 for x in a}
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+```
+>> Set comprehensions follow the same as the list and dictionary comprehensions. They too are enclosed by curly braces. However the result is not a distionary but a set. This construct was added by Python 3. The following example uses the same code as that for list comprehension above. Notice the result is a set with unique elements.
+```
+r = {x + b[y] for y,x in enumerate(a)}
+{18, 14}
+
+```
 
 
 
