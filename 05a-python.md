@@ -51,7 +51,7 @@ put in all kinds of objects in lists.
 ```
 new_list = [expression(i) for i in old_list if filter(i)]
 ```
->>map and filter can be used alongside with lambda to make a construct with similar output as that to list comprehensions. Map and filter by themselves seem to call for an extra function everytime it goes through the item in the iterable which makes its performance slightly slower to that of a list comprehension. A lambda is restricted to a simple expression while a list comprehesion can have more than one for and even if clauses.
+>>Map and filter functions can be used alongside with lambda to make a construct with similar output as that to list comprehensions. Map and filter by themselves seem to call for the creation of an extra function everytime it goes through items in the iterable which makes its performance slightly slower to that of a list comprehension. The usage of lambda is restricted to a simple expression while a list comprehesion can have more than one "for" and even "if" clauses.
 
 ```
 map(func, iterable)
@@ -79,7 +79,7 @@ using list comprehension
 r = [x for x in c if x%2 == 0]
 [0, 2, 8, 34]
 ```
-
+>> Set comprehension and dictionary comprehensions 
 
 
 
