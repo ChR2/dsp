@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return "Number of donuts: %d" %(count)
+    else:
+        return "Number of donuts: many"
 
 
 def both_ends(s):
@@ -37,7 +40,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) > 2:
+        y = s[:2] + s[-2:]
+        return y
+    else:
+        return ' '
+
 
 
 def fix_start(s):
@@ -56,7 +64,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_char = s[0]
+    new_word = [s[0]]
+
+    for i in s[1:]:
+        if i == first_char:
+            new_word.append('*')
+        else:
+            new_word.append(i)
+    new_string = ''.join(new_word)
+    return new_string
 
 
 def mix_up(a, b):
@@ -74,7 +91,13 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+
+    a1 = a[:2]
+    a2 = a[2:]
+    b1 = b[:2]
+    b2 = b[2:]
+    word = b1 + a2 + ' '+ a1 +b2
+    return word
 
 
 def verbing(s):
@@ -91,7 +114,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) > 3:
+        if s[-3:] == 'ing':
+            new_word = s + 'ly'
+        else:
+            new_word = s[:-3] + 'ing'
+        return new_word
+    else:
+        return s
 
 
 def not_bad(s):
@@ -111,7 +141,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    snot = s.find("not")
+    sbad = s.find("bad")
+
+    if sbad > snot:
+        s = s.replace(s[snot:(sbad+3)], 'good')
+    return s
 
 
 def front_back(a, b):
@@ -130,4 +165,57 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_len = len(a)
+    b_len = len(b)
+
+    if a_len % 2 == 0:
+        a_index = a_len // 2
+    else:
+        a_index = (a_len // 2) + 1
+
+    if b_len % 2 == 0:
+        b_index = b_len // 2
+    else:
+        b_index = (b_len // 2) + 1
+
+    a_front = a[0:a_index]
+    a_back = a[a_index:]
+
+    b_front = b[0:b_index]
+    b_back = b[b_index:]
+
+    return a_front + b_front + a_back + b_back
+
+print(donuts(4))
+print(donuts(9))
+print(donuts(10))
+print(donuts(99))
+
+print(both_ends('spring')) #'spng'
+print(both_ends('Hello')) #'Helo'
+print(both_ends('a')) #''
+print(both_ends('xyz')) #'xyyz'
+
+print(fix_start('babble'))#'ba**le'
+print(fix_start('aardvark'))#'a*rdv*rk'
+print(fix_start('google'))#'goo*le'
+print(fix_start('donut'))#'donut'
+
+print(mix_up('mix', 'pod'))#'pox mid'
+print(mix_up('dog', 'dinner'))#'dig donner'
+print(mix_up('gnash', 'sport'))#'spash gnort'
+print(mix_up('pezzy', 'firm'))#'fizzy perm'
+
+print(verbing('hail'))#'hailing'
+print(verbing('swiming'))#'swimingly'
+print(verbing('do'))#'do'
+
+print(not_bad('This movie is not so bad'))#'This movie is good'
+print(not_bad('This dinner is not that bad!'))#'This dinner is good!'
+print(not_bad('This tea is not hot'))#'This tea is not hot'
+print(not_bad("It's bad yet not"))#"It's bad yet not"
+
+print(front_back('abcd', 'xy'))#'abxcdy'
+print(front_back('abcde', 'xyz'))#'abcxydez'
+print(front_back('Kitten', 'Donut'))#'KitDontenut'
+
